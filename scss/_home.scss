@@ -1,0 +1,43 @@
+.colunistas {
+  align-items: center;
+  background-image: url('../assets/bg-colunistas.png');
+  display: flex;
+  height: 380px;
+  justify-content: space-evenly;
+  margin: 1.6rem auto;
+  max-width: 1280px;
+  width: 100%;
+
+  &__logo {
+    align-items: center;
+    display: flex;
+    gap: 0rem;
+
+    h1 {
+      color: #000000;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 4.6rem;
+
+      &::before {
+        background-color: #000000;
+        content: '';
+        display: inline-block;
+        height: 3.6rem;
+        margin: 0 0.8rem 0 1.6rem;
+        position: relative;
+        top: 0.3rem;
+        width: 0.3rem;
+      }
+    }
+  }
+
+  &__conexao {
+    p {
+      color: #4d4d4d;
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+      margin-top: 1.6rem;
+    }
+  }
+}

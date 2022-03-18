@@ -1,0 +1,100 @@
+.header {
+  background-color: $header_bg;
+  padding-top: 0.4rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+
+  &__main {
+    background-color: $header_nav;
+    display: flex;
+    height: 4.8rem;
+    margin-top: 1.2rem;
+    position: relative;
+    z-index: 9;
+
+    & > .container {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  &__logo {
+    background-color: $logo_bg;
+    margin: -1.6rem 0;
+    margin-right: 1.7rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+
+  &__menu {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__linkMenu {
+    color: rgb(230, 230, 230);
+    font-size: 1.4rem;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+
+    &--live {
+      padding: 16px 10px;
+      background: #282828;
+      display: block;
+
+      &::after {
+        content: '';
+        width: 11px;
+        height: 11px;
+        display: inline-block;
+        background: #a81d1d;
+        border-radius: 100%;
+        vertical-align: middle;
+        margin-left: 8px;
+      }
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__searchForm {
+    border: 1px solid #e6e6e6;
+    width: 100%;
+
+    & > .container {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__form {
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    background-color: #fff;
+    font-size: 1.4rem;
+
+    button {
+      background: transparent;
+      border: 0;
+      vertical-align: sub;
+      padding-left: 1.6rem;
+    }
+
+    input {
+      outline: none;
+      height: 46px;
+      background-color: transparent;
+      border: 0;
+      padding: 0 32px 0 0;
+      min-width: 192px;
+    }
+  }
+}

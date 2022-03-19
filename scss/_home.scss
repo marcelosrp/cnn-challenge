@@ -1,3 +1,10 @@
+.ads-big {
+  background-color: #262626;
+  height: 250px;
+  margin: 3rem auto 5rem auto;
+  width: 970px;
+}
+
 .colunistas {
   align-items: center;
   background-image: url('../assets/bg-colunistas.png');
@@ -316,6 +323,44 @@
         border-color: #a81d1d;
         color: #a81d1d;
       }
+    }
+  }
+}
+
+.posts-recentes {
+  background-color: #000;
+  padding: 4rem 0;
+  width: 100%;
+
+  h1 {
+    color: #fff;
+    border-bottom: 1px solid #a81d1d;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    width: fit-content;
+  }
+
+  &__posts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__post {
+    width: 18rem;
+
+    figure {
+      border-radius: 0.4rem;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+
+    p {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2.2rem;
     }
   }
 }

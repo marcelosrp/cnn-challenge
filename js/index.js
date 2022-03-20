@@ -1,24 +1,31 @@
+import { URL_API } from './api'
 import moment from 'moment'
 import 'moment/locale/pt-br'
 
-const URL_API = 'https://alpha.cnnbrasil.com.br/wp-json/wp/v2/recruitment-posts'
-
 const postTemplate = document.querySelector('#post-template')
 const postList = document.querySelector("[data-js='posts-list']")
+const loadingSpinner = document.querySelector("[data-js='loading']")
 
 async function getApiPosts() {
   try {
+    loadingSpinner.classList.remove('d-none')
     const response = await fetch(URL_API)
 
     if (!response.ok) {
-      throw new Error('Um erro foi encontrado, por favor atualize a página')
+      throw new Error(
+        'Um erro foi encontrado, por favor atualize a página e tente novamente.'
+      )
     }
 
     const data = await response.json()
-
     showPosts(data)
   } catch (error) {
-    console.log('Error: ', error)
+    const errorTemplate = `
+      <div class="error-message">${error.message}</div>
+    `
+    postList.innerHTML = errorTemplate
+  } finally {
+    loadingSpinner.remove()
   }
 }
 

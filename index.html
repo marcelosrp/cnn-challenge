@@ -79,113 +79,7 @@
     </section>
 
     <section class="contentBlog container">
-      <div class="posts-content">
-        <article class="posts-content__post">
-          <nav class="share">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-facebook-messenger"></i>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i class="fa-solid fa-envelope-open"></i>
-            </a>
-          </nav>
-          <h1 class="post-title">
-            WhatsApp muda regras de privacidade e app deixa de ser o mais baixado do Brasil
-          </h1>
-          <div class="post-author">
-            <div class="post-author__avatar"></div>
-            <div class="post-author__infos">
-              <h2>
-                Fernando Nakagawa
-              </h2>
-              <p>
-                13 de setembro de 2021 às 08:45
-              </p>
-            </div>
-          </div>
-          <p class="post-resume">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui
-            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-            consectetur,
-            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-            voluptatem.
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-            ea commodi
-            consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel
-            illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-          </p>
-          <a href="#" class="post-button">
-            Continuar lendo
-          </a>
-        </article>
-
-        <article class="posts-content__post">
-          <nav class="share">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-facebook-messenger"></i>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i class="fa-solid fa-envelope-open"></i>
-            </a>
-          </nav>
-          <h1 class="post-title">
-            WhatsApp muda regras de privacidade e app deixa de ser o mais baixado do Brasil
-          </h1>
-          <div class="post-author">
-            <div class="post-author__avatar"></div>
-            <div class="post-author__infos">
-              <h2>
-                Fernando Nakagawa
-              </h2>
-              <p>
-                13 de setembro de 2021 às 08:45
-              </p>
-            </div>
-          </div>
-          <p class="post-resume">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui
-            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-            consectetur,
-            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-            voluptatem.
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-            ea commodi
-            consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel
-            illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-          </p>
-          <a href="#" class="post-button">
-            Continuar lendo
-          </a>
-        </article>
-
+      <div class="posts-content" data-js="posts-list">
         <button class="contentBlog__buttonCarregar">
           Carregar mais de Colunas +
         </button>
@@ -423,6 +317,44 @@
       </div>
     </section>
   </footer>
+
+  <template id="post-template">
+    <article class="posts-content__post">
+      <nav class="share">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-facebook-messenger"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-envelope-open"></i>
+        </a>
+      </nav>
+      <h1 class="post-title"></h1>
+      <div class="post-author">
+        <img src="" class="post-author__avatar" alt="" />
+        <div class="post-author__infos">
+          <h2 class="post-author__name"></h2>
+          <p class="post-author__post-date"></p>
+        </div>
+      </div>
+      <img src="" alt="" class="post-image">
+      <p class="post-resume"></p>
+      <a href="#" class="post-button" target="_blank">
+        Continuar lendo
+      </a>
+    </article>
+  </template>
 </body>
 
 </html>

@@ -160,9 +160,33 @@
       font-size: 1.4rem;
       font-weight: 400;
       padding: 0.8rem 3.2rem;
+      position: relative;
       margin: 2rem auto 0 auto;
       text-decoration: none;
       width: fit-content;
+      z-index: 1;
+
+      &::after {
+        background-color: #a81d1d;
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: all 0.3s ease;
+        width: 0;
+        z-index: -1;
+      }
+
+      &:hover {
+        border-color: #a81d1d;
+        color: #ffffff;
+
+        &::after {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -285,8 +309,32 @@
         font-size: 1.3rem;
         justify-content: center;
         padding: 0.8rem 3.2rem;
+        position: relative;
         text-decoration: none;
         width: 100%;
+        z-index: 1;
+
+        &::after {
+          background-color: #a81d1d;
+          content: '';
+          display: block;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          transition: all 0.3s ease;
+          width: 0;
+          z-index: -1;
+        }
+
+        &:hover {
+          border-color: #a81d1d;
+          color: #ffffff;
+
+          &::after {
+            width: 100%;
+          }
+        }
       }
     }
   }

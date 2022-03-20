@@ -1,6 +1,6 @@
-import { URL_API } from './api'
 import moment from 'moment'
 import 'moment/locale/pt-br'
+import { URL_API } from './api'
 
 const postTemplate = document.querySelector('#post-template')
 const postList = document.querySelector("[data-js='posts-list']")

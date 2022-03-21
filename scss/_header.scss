@@ -17,6 +17,10 @@
     & > .container {
       align-items: center;
       display: flex;
+
+      @media (max-width: 992px) {
+        justify-content: space-between;
+      }
     }
   }
 
@@ -34,6 +38,10 @@
     gap: 1.5rem;
     overflow: hidden;
     position: relative;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 
   &__linkMenu {
@@ -69,6 +77,10 @@
     border: 1px solid #e6e6e6;
     width: 100%;
 
+    @media (max-width: 767px) {
+      display: none;
+    }
+
     & > .container {
       display: flex;
       justify-content: flex-end;
@@ -95,6 +107,24 @@
       border: 0;
       padding: 0 32px 0 0;
       min-width: 192px;
+    }
+  }
+
+  &__menu-mobile {
+    @media (min-width: 991px) {
+      display: none;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: #fff !important;
+    }
+
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: #fff !important;
     }
   }
 }

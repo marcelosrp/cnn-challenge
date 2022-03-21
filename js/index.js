@@ -1,10 +1,22 @@
 import moment from 'moment'
 import 'moment/locale/pt-br'
+import 'hamburgers/dist/hamburgers.css'
 import { URL_API } from './api'
 
 const postTemplate = document.querySelector('#post-template')
 const postList = document.querySelector("[data-js='posts-list']")
 const loadingSpinner = document.querySelector("[data-js='loading']")
+
+const hamburger = document.querySelector("[data-js='hamburger']")
+
+hamburger.addEventListener('click', () => {
+  if (hamburger.classList.contains('is-active')) {
+    hamburger.classList.remove('is-active')
+    return
+  }
+
+  hamburger.classList.add('is-active')
+})
 
 async function getApiPosts() {
   try {

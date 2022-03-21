@@ -22,6 +22,11 @@
       align-items: center;
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 2rem;
+      }
     }
 
     .titulo-newsletter {
@@ -44,6 +49,10 @@
         font-size: 1.3rem;
         line-height: 1.6rem;
         font-weight: 400;
+
+        @media (max-width: 767px) {
+          padding-right: 6rem;
+        }
       }
     }
 
@@ -62,6 +71,10 @@
       outline: none;
       padding-left: 2rem;
       width: 39rem;
+
+      @media (max-width: 767px) {
+        width: auto;
+      }
 
       &::placeholder {
         color: #fff;
@@ -93,6 +106,11 @@
     & > .container {
       display: flex;
       gap: 10rem;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 3rem;
+      }
 
       &--copy {
         justify-content: flex-end;

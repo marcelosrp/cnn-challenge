@@ -1,8 +1,14 @@
 .ads-big {
   background-color: #262626;
-  height: 250px;
-  margin: 3rem auto 5rem auto;
-  width: 970px;
+  height: 20rem;
+  margin: 1.5rem auto 3rem auto;
+  width: 95%;
+
+  @media (min-width: 1280px) {
+    height: 25rem;
+    margin: 3rem auto 5rem auto;
+    width: 970px;
+  }
 }
 
 .colunistas {
@@ -14,6 +20,14 @@
   margin: 1.6rem auto;
   max-width: 1280px;
   width: 100%;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    height: auto;
+    padding: 3rem 1.5rem;
+  }
 
   &__logo {
     align-items: center;
@@ -47,12 +61,22 @@
       margin-top: 1.6rem;
     }
   }
+
+  &__prancheta {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
 }
 
 .contentBlog {
   display: flex;
   gap: 2rem;
   justify-content: center;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 
   &__buttonCarregar {
     border: 1px solid #a81d1d;
@@ -74,6 +98,14 @@
   padding: 2rem 0;
   width: 70rem;
 
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 50%;
+  }
+
   &__post {
     background: #ffffff;
     border: 1px solid #e6e6e6;
@@ -83,6 +115,10 @@
     padding: 2.4rem;
     position: relative;
     width: 67.3rem;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
 
     &::before {
       background-color: #a81d1d;
@@ -194,6 +230,14 @@
 .contentAside {
   width: 30rem;
 
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 50%;
+  }
+
   &__mais-lidas {
     padding: 2rem 1.6rem;
 
@@ -252,6 +296,10 @@
     margin: 4rem auto;
     overflow: hidden;
     width: 24rem;
+
+    @media (max-width: 767px) {
+      width: 85%;
+    }
 
     .header-colunistas {
       align-items: center;
@@ -343,6 +391,10 @@
     margin: 4rem auto;
     width: 24rem;
 
+    @media (max-width: 767px) {
+      width: 80%;
+    }
+
     h2 {
       color: #262626;
       font-size: 1.6rem;
@@ -399,22 +451,44 @@
   &__posts {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
   }
 
   &__post {
-    width: 18rem;
+    width: 15rem;
+
+    @media (min-width: 1280px) {
+      width: 18rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      width: 20rem;
+    }
 
     figure {
       border-radius: 0.4rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       overflow: hidden;
+
+      @media (min-width: 1280px) {
+        margin-bottom: 2rem;
+      }
     }
 
     p {
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 700;
-      line-height: 2.2rem;
+      line-height: 1.8rem;
+
+      @media (min-width: 1280px) {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+      }
     }
   }
 }

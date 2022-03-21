@@ -112,7 +112,7 @@
 
   &__menu-mobile {
     @media (min-width: 991px) {
-      display: none;
+      display: none !important;
     }
 
     .hamburger-inner,

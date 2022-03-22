@@ -20,9 +20,9 @@
 
     <section class="contentBlog container">
       <div class="posts-content" data-js="posts-list">
-        <!-- <button class="contentBlog__buttonCarregar">
+        <button data-js="button-mais-posts" class="contentBlog__buttonCarregar d-none">
           Carregar mais de Colunas +
-        </button> -->
+        </button>
 
         <div data-js="loading" class="loader d-none">Loading...</div>
       </div>

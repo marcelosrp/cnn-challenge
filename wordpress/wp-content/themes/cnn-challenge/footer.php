@@ -67,7 +67,7 @@
   </footer>
 
   <template id="post-template">
-    <article class="posts-content__post">
+    <article data-js="content-post" class="posts-content__post">
       <nav class="share">
         <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Compartilhe no Facebook">
           <i class="fa-brands fa-facebook-f"></i>

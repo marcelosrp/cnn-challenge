@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Confira as notícias de hoje, fatos da política, economia e internacional, no maior canal de notícias do Brasil e do mundo. Breaking news, análises e mais!" />
   <title>CNN Challenge Wordpress</title>
   <link rel="apple-touch-icon" sizes="180x180"
     href="https://www.cnnbrasil.com.br/wp-content/themes/master-theme/assets/favicon/apple-touch-icon.png">

@@ -64,6 +64,7 @@
 
   &__prancheta {
     @media (max-width: 767px) {
+      height: auto;
       width: 100%;
     }
   }
@@ -177,6 +178,7 @@
     }
 
     .post-image {
+      height: auto;
       margin-bottom: 1rem;
       width: 100%;
     }
